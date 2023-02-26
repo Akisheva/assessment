@@ -1,0 +1,22 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    background-color: #262626;
+    &__copyright {
+        color: #FFFFFF;
+        font-family: "Font Awesome 5 Pro";
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 13px;
+    }
+    &__text {
+        color: #FFFFFF;
+        font-family: "Proxima Nova";
+        font-size: 12px;
+        line-height: 15px;
+        margin-left: 8px;
+    }
+}
+

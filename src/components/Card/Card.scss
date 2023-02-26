@@ -1,0 +1,48 @@
+.card {
+    width: 200px;
+    min-height: 263px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+    &__img {
+        width: 100%;
+        height: 72px;
+        // when images are here delete backgroud
+        background-color: #868686;
+        padding: 55px 16px 0 16px;
+        display: flex;
+        justify-content: space-between;
+        &-date, &-category {
+            color: #FFFFFF;
+            font-size: 8px;
+            font-style: italic;
+            line-height: 9px;
+        }
+    }
+    &__content-wrapper {
+        padding: 20px 16px;
+    }
+    &__title {
+        margin-bottom: 8px;
+        color: #262626;
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 29px;
+        word-break: break-all;
+    }
+    &__content {
+        color: #868686;
+        font-size: 12px;
+        line-height: 19px;
+        word-break: break-all;
+    }
+    @media screen and (max-width: 320px) {
+        width: 100%;
+        &__title {
+            font-size: 18px;
+            line-height: 22px;
+        }
+        &__content {
+            font-size: 10px;
+            line-height: 14px;
+        }
+    }
+}

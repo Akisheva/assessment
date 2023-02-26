@@ -1,0 +1,113 @@
+.header {
+    text-align: center;
+    margin: 0 auto -6px;
+    position: relative;
+    &__background{
+        width: 100vw;
+    }
+    .header-wrapper {
+        position: absolute;
+        top: calc(35px + 24px);
+        left: 50%;
+        transform:translate(-50%, -50%);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }  
+    &__logo {
+        display: flex;
+        align-items: center;
+        .logo {
+            margin-right: 10px;
+            width: 80px;
+            height: 71px;
+        }
+        &-item {
+            color: #FFFFFF;
+            font-size: 36px;
+            font-weight: 700;
+        }
+        &-item-highlighted {
+            margin-left: 12px;
+            color: #E95E30;
+        }
+    }
+    &__menu {
+        .active {
+            border-bottom: 2px solid #E95E30;
+        }        
+        a{
+        margin-left: 31px;
+        color: #FFFFFF;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 22px;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .header__logo-item {
+            font-size: 28px;
+        }
+        .header__logo-item-highlighted {
+            margin-left: 10px;
+        }
+        .header__menu a {
+            font-size: 14px;
+        }
+    }
+    @media screen and (max-width: 576px) {
+        .header__logo-item {
+            font-size: 24px;
+        }
+        .header__logo-item-highlighted {
+            margin-left: 8px;
+        }
+        .header__menu a {
+            font-size: 12px;
+            margin-left: 26px;
+        }
+        &__logo .logo {
+            width: 60px;
+            height: 52px;
+        }
+        .header-wrapper {
+            top: calc(31px + 10px);
+        }    
+    }
+    @media screen and (max-width: 430px)  {
+        .header__logo-item {
+            font-size: 20px;
+        }
+        .header__logo-item-highlighted {
+            margin-left: 8px;
+        }
+        .header__menu a {
+            font-size: 12px;
+            margin-left: 26px;
+        }
+        &__logo .logo {
+            width: 40px;
+            height: 32px;
+            margin-right: 6px;
+        }
+    }
+    @media screen and (max-width: 320px) {
+        .header__logo-item {
+            font-size: 16px;
+        }
+        .header__logo-item-highlighted {
+            margin-left: 6px;
+        }
+        .header__menu a {
+            font-size: 12px;
+            margin-left: 14px;
+        }
+        &__logo .logo {
+            width: 30px;
+            height: 24px;
+        }
+        .header-wrapper {
+            top: calc(22px + 6px);
+        }    
+    }
+}

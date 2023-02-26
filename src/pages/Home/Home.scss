@@ -1,0 +1,22 @@
+.main-content {
+    background-color: #F4F4F4;
+    .wrapper {
+        padding: 49.5px 0;
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        gap: 22px;
+        justify-content: center;
+        align-items: flex-start;   
+        @media screen and (max-width: 700px) {
+            padding: 34px 0;
+            grid-template-columns: 1fr;
+            justify-self: center;
+          } 
+        @media screen and (max-width: 576px) {
+            gap: 16px;
+        }  
+        @media screen and (max-width: 320px) {
+            padding: 20px 0;
+        } 
+    }
+}

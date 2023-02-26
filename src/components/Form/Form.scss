@@ -1,0 +1,116 @@
+.form-wrapper {
+    width: 430px;
+    background-color: #fff;
+    padding: 24px 25px;
+    margin: 0 auto;
+    .form-title {
+        color: #2B2B2B;
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 29px;
+        margin-bottom: 24px;
+    }
+    .form-label {
+        color: #404040;
+        font-size: 12px;
+        line-height: 15px;
+        margin-bottom: 7px;
+    }
+    .form-item {
+        width: 100%;
+        border: none;
+        box-sizing: border-box;
+        appearance: none;
+        background-color: #FAFAFA;
+        margin-bottom: 24px;
+        padding: 12px 18px;
+        color: #C5C5C5;
+        font-size: 12px;
+        font-style: italic;
+        line-height: 15px;
+        &::placeholder {
+            color: #C5C5C5;
+        }
+    }
+    #select {
+        position: relative;
+    }
+    .select-arrow {
+        position: absolute;
+        right: 16px;
+        top: 36px;
+        width: 6px;
+        height: 6px;
+        z-index: 1;
+        border-bottom: 1px black solid;
+        border-right: 1px black solid;
+        transform: rotate(45deg);
+    }
+    input::file-selector-button {
+        font-weight: bold;
+        color: #fff;
+        font-size: 10px;
+        background: #7D7D7D;
+        border: none;
+        border-radius: 18px;
+        padding: 7px 11px 5px 12px; 
+        margin-left: 30px;
+        cursor: pointer;
+    }
+    #file {
+        width: 45%;
+        position: relative;
+        cursor: pointer;
+        &::after{
+            content:url("./camera.svg");
+            position: absolute;
+            top: 16px;
+            left: 18px;
+        }
+    }
+    .form-text-area {
+        height: 214px;
+        width: 100%;
+        border: none;
+        color: #404040;
+        font-size: 12px;
+        box-sizing: border-box;
+        padding: 12px 18px;
+        margin-bottom: 24px;
+        background-color: #FAFAFA;
+    }
+    .form-btn {
+        text-align: center;
+        .form-submit {
+            border: none;
+            box-sizing: border-box;
+            border-radius: 18px;
+            background-color: #F27623;
+            padding: 8.5px 46px;
+            color: #fff;
+            font-size: 12px;
+            font-weight: bold;
+            line-height: 15px;
+            cursor: pointer;
+        }
+    }
+    .error-message{
+        margin: -20px 0 5px;
+        text-align: left;
+        font-size: 12px;
+        color: #dc3545;
+    }
+    @media screen and (max-width: 700px) {
+        margin-bottom: 22px;
+        width: 100%;
+    }
+    @media screen and (max-width: 576px) {
+        padding: 16px;
+    }
+    @media screen and (max-width: 320) {
+        .form-title {
+            font-size: 20px;
+        }
+    }
+}
+

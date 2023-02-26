@@ -1,0 +1,114 @@
+.blog-page{
+    background-color: #F4F4F4;
+    padding: 49.5px 0;
+}
+.page-title {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    color: #FFFFFF;
+    font-size: 48px;
+    font-weight: bold;
+}
+.blog-wrapper{
+    text-align: center;
+    &__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 24px;
+    text-align: left;
+    justify-items: center;
+    margin-bottom: 26px;
+    }
+    .pages {
+        margin-top: 20px;
+        .page, .current-page{
+            margin: 8px;
+            color: #383838;
+            font-size: 12px;
+            cursor: pointer;
+            @media screen and (max-width: 576px) {
+                font-size: 10px;
+                margin: 8px 6px;
+            }  
+            @media screen and (max-width: 320px) {
+                font-size: 8px;
+            } 
+        }
+        .current-page {
+            padding: 10px 12px;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 17px;
+            border-radius: 18px;
+            background-color: #F2F2F2;
+            @media screen and (max-width: 576px) {
+                font-size: 12px;
+                padding: 8px 10px;
+            }  
+            @media screen and (max-width: 320px) {
+                font-size: 10px;
+                padding: 6px 8px;
+            } 
+        }
+        &__switcher {
+            border: none;
+            background-color: #fff;
+            color: #F27623;
+            font-size: 12px;
+            line-height: 19px;
+            cursor: pointer;
+            @media screen and (max-width: 576px) {
+                font-size: 10px;
+            }
+        }
+        #next_btn::after {
+            content: "\2192";
+        }
+        #prev_btn::before {
+            content: "\2190";
+        }
+    } 
+}
+@media screen and (max-width: 992) {
+    .page-title {
+        top: 40%;
+    }
+}
+@media screen and (max-width: 900px) {
+    .blog-page {
+        padding: 34px 0;
+    }
+    .page-title {
+        font-size: 42px;
+        top: 35%;
+    }
+}
+@media screen and (max-width: 576px) {
+    .page-title {
+        font-size: 36px;
+        top: 30%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .page-title {
+        font-size: 32px;
+        top: 22%;
+    }
+}
+@media screen and (max-width: 430px) {
+    .page-title {
+        font-size: 28px;
+        top: 22%;
+    }
+}
+@media screen and (max-width: 320px) {
+    .blog-page {
+        padding: 18px 0;
+    } 
+    .page-title {
+        font-size: 22px;
+        top: 16%;
+    }
+}
